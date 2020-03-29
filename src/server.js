@@ -22,4 +22,8 @@ app.use(express.json());
 app.use(userRouter);
 app.use(taskRouter);
 
+app.get("/", (req, res) => {
+  res.status(200).send({ message: "I'm here" });
+});
+
 app.listen(port, () => console.log(`listening on port ${port}`));
