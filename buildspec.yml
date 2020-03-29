@@ -1,0 +1,10 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      # Install dependencies
+      - npm install
+
+      # upgrade AWS CLI to laster version
+      - pip install --upgrade awscli
