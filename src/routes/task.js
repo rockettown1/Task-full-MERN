@@ -20,7 +20,7 @@ router.post("/tasks", auth, async (req, res) => {
 });
 
 router.get("/main", (req, res) => {
-  res.status(200).sendFile(path.join(__dirname + "../../client/build/index.html"));
+  res.status(200).sendFile(path.join(__dirname + "../client/build/index.html"));
 });
 
 router.get("/tasks", auth, async (req, res) => {
