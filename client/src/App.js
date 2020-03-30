@@ -24,7 +24,7 @@ const App = () => {
           <TutorialProvider>
             <Route exact path="/" component={AccessModal} />
             <PrivateRoute
-              path="/tasks"
+              path="/main"
               render={() => {
                 return <Tasks />;
               }}
@@ -32,7 +32,7 @@ const App = () => {
           </TutorialProvider>
         </FormProvider>
       </AppContainer>
-      {isAuthenticated ? <Redirect to="/tasks" /> : <Redirect to="/" />}
+      {isAuthenticated ? <Redirect to="/main" /> : <Redirect to="/" />}
     </TasksProvider>
   );
 };

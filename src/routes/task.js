@@ -19,13 +19,14 @@ router.post("/tasks", auth, async (req, res) => {
   }
 });
 
+router.get("/main", (req, res) => {
+  res.status(200).sendFile(path.join(__dirname + "../../client/build/index.html"));
+});
+
 router.get("/tasks", auth, async (req, res) => {
   try {
     const response = await Task.find({ owner: req.user._id });
-    res
-      .status(200)
-      .send(response)
-      .sendFile(path.join(__dirname + "../../client/build/index.html"));
+    res.status(200).send(response);
   } catch (error) {
     res.status(500).send(error);
   }

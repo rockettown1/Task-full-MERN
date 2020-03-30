@@ -116,7 +116,7 @@ export default function AccessModal() {
     setSignName("");
     setisAuthenticated(true);
     setJustSignedup(true);
-    history.push("/tasks");
+    history.push("/main");
   };
 
   const logInHandler = async () => {
@@ -145,7 +145,7 @@ export default function AccessModal() {
       setLogEmail("");
       setLogPass("");
       setConPass("");
-      history.push("/tasks");
+      history.push("/main");
     }
   };
 
