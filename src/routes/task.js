@@ -3,6 +3,7 @@ const { Task } = require("../models/task");
 const router = new express.Router();
 const { auth } = require("../middleware/auth.js");
 const mongoose = require("mongoose");
+const path = require("path");
 
 router.post("/tasks", auth, async (req, res) => {
   // const task = new Task(req.body);
@@ -20,7 +21,7 @@ router.post("/tasks", auth, async (req, res) => {
 });
 
 router.get("/main", (req, res) => {
-  res.status(200).sendFile(path.join(__dirname + "../client/build/index.html"));
+  res.status(200).sendFile(path.join(__dirname + "../../../client/build/index.html"));
 });
 
 router.get("/tasks", auth, async (req, res) => {
