@@ -1,5 +1,5 @@
 export const authHandler = async setAuth => {
-  const response = await fetch("https://blooming-harbor-18687.herokuapp.com/tasks", {
+  const response = await fetch("http://localhost:3004/tasks", {
     method: "GET",
     headers: {
       "content-type": "application/json"

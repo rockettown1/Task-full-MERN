@@ -9,7 +9,7 @@ export default function ConfirmDelete({ style, keys }) {
   const deleteTask = async index => {
     const taskID = tasks[index]._id;
 
-    await fetch(`https://blooming-harbor-18687.herokuapp.com/tasks/${taskID}`, {
+    await fetch(`http://localhost:3004/tasks/${taskID}`, {
       method: "DELETE",
       headers: { "content-type": "application/json" },
       credentials: "include"

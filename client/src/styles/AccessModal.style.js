@@ -12,6 +12,13 @@ export const Container = styled(animated.div)`
   display: flex;
   justify-content: center;
   overflow: hidden;
+  margin: 0;
+
+  @media screen and (max-width: 835px) {
+    box-shadow: none;
+    width: 370px;
+    height: 500px;
+  }
 `;
 
 export const ButtonContainer = styled.div`
@@ -24,6 +31,9 @@ export const ButtonContainer = styled.div`
   /* overflow: hidden; */
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  @media screen and (max-width: 835px) {
+    border-radius: 10px;
+  }
 `;
 
 export const Button = styled.div`
@@ -48,6 +58,10 @@ export const Active = styled(animated.div)`
   left: 0%;
   transition: all 1s;
   cursor: pointer;
+  @media screen and (max-width: 835px) {
+    border-radius: 10px;
+    height: 40px;
+  }
 `;
 
 export const Hidden = styled.div`
@@ -89,6 +103,11 @@ export const Wrapper = styled(animated.div)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 835px) {
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+  }
 `;
 
 //Logout
@@ -127,4 +146,9 @@ export const AppContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 835px) {
+    background-color: white;
+    align-items: flex-start;
+  }
 `;

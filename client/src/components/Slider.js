@@ -40,7 +40,7 @@ function Slider(props) {
     if (tasks[index].done) {
       taskDone = false;
     }
-    await fetch(`https://blooming-harbor-18687.herokuapp.com/tasks/${taskID}`, {
+    await fetch(`http://localhost:3004/tasks/${taskID}`, {
       method: "PATCH",
       headers: { "content-type": "application/json" },
       credentials: "include",
@@ -48,7 +48,7 @@ function Slider(props) {
         done: taskDone
       })
     });
-    const response = await fetch("https://blooming-harbor-18687.herokuapp.com/tasks", {
+    const response = await fetch("http://localhost:3004/tasks", {
       method: "GET",
       headers: { "content-type": "application/json" },
       credentials: "include"

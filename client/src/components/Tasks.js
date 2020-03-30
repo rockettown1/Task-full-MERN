@@ -136,7 +136,7 @@ export default function Tasks() {
     }
 
     const getUser = async () => {
-      const response = await fetch("https://blooming-harbor-18687.herokuapp.com/users/me", {
+      const response = await fetch("http://localhost:3004/users/me", {
         method: "GET",
         headers: {
           "content-type": "application/json"
@@ -183,7 +183,7 @@ export default function Tasks() {
     const capitalisedTask = newTask.charAt(0).toUpperCase() + newTask.slice(1);
     if (isAuthenticated && capitalisedTask !== "") {
       newTasksList.push({ description: capitalisedTask, done: false });
-      await fetch("https://blooming-harbor-18687.herokuapp.com/tasks", {
+      await fetch("http://localhost:3004/tasks", {
         method: "POST",
         headers: {
           "content-type": "application/json"
@@ -194,7 +194,7 @@ export default function Tasks() {
           deadline: day
         })
       });
-      const response = await fetch("https://blooming-harbor-18687.herokuapp.com/tasks", {
+      const response = await fetch("http://localhost:3004/tasks", {
         method: "GET",
         headers: { "content-type": "application/json" },
         credentials: "include"

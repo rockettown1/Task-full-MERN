@@ -5,6 +5,9 @@ export const LoginWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 250px;
+  @media screen and (max-width: 835px) {
+    box-shadow: none;
+  }
 `;
 
 export const Title = styled.h2`
@@ -37,6 +40,9 @@ export const InputWrap = styled.div`
   align-items: center;
   height: 30px;
   margin-bottom: 10px;
+  @media screen and (max-width: 835px) {
+    margin-bottom: 30px;
+  }
 `;
 
 export const Email = styled.input`
@@ -50,6 +56,10 @@ export const Email = styled.input`
   &:focus {
     border-bottom: 1px solid #fda085;
   }
+  @media screen and (max-width: 835px) {
+    margin: 30px 0;
+    font-size: 1em;
+  }
 `;
 
 export const Password = styled.input`
@@ -61,6 +71,9 @@ export const Password = styled.input`
   transition: all 1s;
   &:focus {
     border-bottom: 1px solid #fda085;
+  }
+  @media screen and (max-width: 835px) {
+    font-size: 1em;
   }
 `;
 
@@ -82,6 +95,9 @@ export const Name = styled.input`
   transition: all 1s;
   &:focus {
     border-bottom: 1px solid #fda085;
+  }
+  @media screen and (max-width: 835px) {
+    font-size: 1em;
   }
 `;
 

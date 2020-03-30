@@ -66,6 +66,9 @@ export const TaskTitle = styled.div`
   color: white;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
+  @media screen and (max-width: 835px) {
+    border-radius: 0;
+  }
 `;
 
 export const Todo = styled.p`
@@ -89,6 +92,12 @@ export const TasksContainer = styled(animated.div)`
   align-items: center;
   transition: all 1.5s;
   padding-bottom: 50px;
+  @media screen and (max-width: 835px) {
+    box-shadow: none;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
 `;
 
 export const Task = styled.input``;

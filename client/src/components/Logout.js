@@ -11,7 +11,7 @@ export default function Logout() {
   const logOutHandler = async () => {
     console.log("logging out");
 
-    const response = await fetch("https://blooming-harbor-18687.herokuapp.com/users/logout", {
+    const response = await fetch("http://localhost:3004/users/logout", {
       method: "GET",
       headers: {
         "content-type": "application/json"
