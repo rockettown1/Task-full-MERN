@@ -231,7 +231,7 @@
                     case 0:
                       return (
                         (e.next = 2),
-                        fetch("http://localhost:3004/tasks", {
+                        fetch("https://blooming-harbor-18687.herokuapp.com/tasks", {
                           method: "GET",
                           headers: { "content-type": "application/json" },
                           credentials: "include"
@@ -960,7 +960,7 @@
                         return (
                           (n = o[t]._id),
                           (e.next = 3),
-                          fetch("http://localhost:3004/tasks/".concat(n), {
+                          fetch("https://blooming-harbor-18687.herokuapp.com/tasks/".concat(n), {
                             method: "DELETE",
                             headers: { "content-type": "application/json" },
                             credentials: "include"
@@ -1146,7 +1146,7 @@
                       return (
                         (t = e.sent),
                         (e.next = 5),
-                        fetch("http://localhost:3004/tasks/".concat(t), {
+                        fetch("https://blooming-harbor-18687.herokuapp.com/tasks/".concat(t), {
                           method: "PATCH",
                           headers: { "content-type": "application/json" },
                           credentials: "include",
@@ -1236,7 +1236,7 @@
                         return (
                           console.log("logging out"),
                           (e.next = 3),
-                          fetch("http://localhost:3004/users/logout", {
+                          fetch("https://blooming-harbor-18687.herokuapp.com/users/logout", {
                             method: "GET",
                             headers: { "content-type": "application/json" },
                             credentials: "include"
@@ -1325,7 +1325,7 @@
                             (a = !0),
                             A[t].done && (a = !1),
                             (e.next = 6),
-                            fetch("http://localhost:3004/tasks/".concat(n), {
+                            fetch("https://blooming-harbor-18687.herokuapp.com/tasks/".concat(n), {
                               method: "PATCH",
                               headers: { "content-type": "application/json" },
                               credentials: "include",
@@ -1335,7 +1335,7 @@
                         case 6:
                           return (
                             (e.next = 8),
-                            fetch("http://localhost:3004/tasks", {
+                            fetch("https://blooming-harbor-18687.herokuapp.com/tasks", {
                               method: "GET",
                               headers: { "content-type": "application/json" },
                               credentials: "include"
@@ -1758,7 +1758,7 @@
                           case 0:
                             return (
                               (e.next = 2),
-                              fetch("http://localhost:3004/users/me", {
+                              fetch("https://blooming-harbor-18687.herokuapp.com/users/me", {
                                 method: "GET",
                                 headers: { "content-type": "application/json" },
                                 credentials: "include"
@@ -1819,7 +1819,7 @@
                         return (
                           a.push({ description: r, done: !1 }),
                           (e.next = 7),
-                          fetch("http://localhost:3004/tasks", {
+                          fetch("https://blooming-harbor-18687.herokuapp.com/tasks", {
                             method: "POST",
                             headers: { "content-type": "application/json" },
                             credentials: "include",
@@ -1829,7 +1829,7 @@
                       case 7:
                         return (
                           (e.next = 9),
-                          fetch("http://localhost:3004/tasks", {
+                          fetch("https://blooming-harbor-18687.herokuapp.com/tasks", {
                             method: "GET",
                             headers: { "content-type": "application/json" },
                             credentials: "include"
@@ -2119,7 +2119,7 @@
                       case 0:
                         return (
                           (e.next = 2),
-                          fetch("http://localhost:3004/users", {
+                          fetch("https://blooming-harbor-18687.herokuapp.com/users", {
                             method: "POST",
                             headers: { "content-type": "application/json" },
                             credentials: "include",
@@ -2163,7 +2163,7 @@
                         }
                         return (
                           (e.next = 3),
-                          fetch("http://localhost:3004/users/login", {
+                          fetch("https://blooming-harbor-18687.herokuapp.com/users/login", {
                             method: "POST",
                             headers: { "content-type": "application/json" },
                             credentials: "include",
