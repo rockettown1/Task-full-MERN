@@ -34,7 +34,9 @@ router.get("/users/logout", auth, async (req, res) => {
       return token.token !== req.token;
     });
     await req.user.save();
-    res.clearCookie("access_token", { httpOnly: true, path: "/" }).send({ message: "successfully logged out" });
+    res
+      .clearCookie("access_token", { httpOnly: true, path: "/", sameSite: "none", secure: true })
+      .send({ message: "successfully logged out" });
   } catch (error) {
     res.status(500).send();
   }
