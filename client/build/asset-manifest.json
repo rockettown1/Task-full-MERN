@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.44acef22.chunk.css",
+    "main.js": "/static/js/main.65bef515.chunk.js",
+    "main.js.map": "/static/js/main.65bef515.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.92256871.js",
+    "runtime-main.js.map": "/static/js/runtime-main.92256871.js.map",
+    "static/js/2.adbd142a.chunk.js": "/static/js/2.adbd142a.chunk.js",
+    "static/js/2.adbd142a.chunk.js.map": "/static/js/2.adbd142a.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.e0c45452f3b469a82953709dbcf56afa.js": "/precache-manifest.e0c45452f3b469a82953709dbcf56afa.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.44acef22.chunk.css.map": "/static/css/main.44acef22.chunk.css.map",
+    "static/js/2.adbd142a.chunk.js.LICENSE.txt": "/static/js/2.adbd142a.chunk.js.LICENSE.txt",
+    "static/media/at.svg": "/static/media/at.50a9105d.svg",
+    "static/media/newtick.svg": "/static/media/newtick.190cc219.svg",
+    "static/media/password.svg": "/static/media/password.0c4e5aa6.svg",
+    "static/media/user-silhouette.svg": "/static/media/user-silhouette.8f3a97bd.svg",
+    "static/media/woman.svg": "/static/media/woman.2f4e1f7c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.92256871.js",
+    "static/js/2.adbd142a.chunk.js",
+    "static/css/main.44acef22.chunk.css",
+    "static/js/main.65bef515.chunk.js"
+  ]
+}

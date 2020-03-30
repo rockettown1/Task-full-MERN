@@ -1,0 +1,53 @@
+export {
+  Container,
+  ButtonContainer,
+  Button,
+  Active,
+  LogContainer,
+  Hidden,
+  LabelL,
+  LabelS,
+  Wrapper,
+  LogoutButton,
+  LogoutText,
+  AppContainer
+} from "./AccessModal.style";
+
+export { LoginWrapper, Title, Avatar, User, InputWrap, Icon, Email, Password, Name, Error } from "./Forms.style";
+
+export {
+  SliderContainer,
+  UnderTask,
+  Delete,
+  Done,
+  TaskSlider,
+  TaskTitle,
+  Todo,
+  TasksContainer,
+  Task,
+  TaskWrapper,
+  TaskInputWrap,
+  GreenTick,
+  ConfirmModal,
+  Box,
+  Warning,
+  Yes,
+  No,
+  ConfirmButtons,
+  Text,
+  DeadlineContainer,
+  DateInfo,
+  TaskModal,
+  DateWrapper,
+  CurrentTask,
+  TaskButton,
+  AddTitle,
+  Todays,
+  Welcome,
+  BaseWrapper,
+  EditButton,
+  EditTitle,
+  StatsContainer,
+  Percent,
+  Missed
+} from "./Tasks.style";
