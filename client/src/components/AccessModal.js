@@ -89,7 +89,7 @@ export default function AccessModal() {
 
   const signUpHandler = async () => {
     //creates a new user
-    const response = await fetch("http://localhost:3004/users", {
+    const response = await fetch("https://blooming-harbor-18687.herokuapp.com/users", {
       method: "POST",
       headers: { "content-type": "application/json" },
       credentials: "include",
@@ -121,7 +121,7 @@ export default function AccessModal() {
 
   const logInHandler = async () => {
     if (logEmail.length > 0 && logPass.length > 6) {
-      const response = await fetch("http://localhost:3004/users/login", {
+      const response = await fetch("https://blooming-harbor-18687.herokuapp.com/users/login", {
         method: "POST",
         headers: { "content-type": "application/json" },
         credentials: "include",

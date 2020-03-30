@@ -18,7 +18,7 @@ export default function ConfirmDelete({ style, keys }) {
   const updateTask = async () => {
     const taskID = await tasks[currentIndex]._id;
 
-    await fetch(`http://localhost:3004/tasks/${taskID}`, {
+    await fetch(`https://blooming-harbor-18687.herokuapp.com/tasks/${taskID}`, {
       method: "PATCH",
       headers: { "content-type": "application/json" },
       credentials: "include",
