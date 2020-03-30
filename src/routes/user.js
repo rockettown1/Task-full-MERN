@@ -8,7 +8,7 @@ router.post("/users", async (req, res) => {
     const user = new User(req.body);
     const token = await user.generateAuthToken();
     await user.save();
-    res.cookie("access_token", token, { httpOnly: true, path: "/" });
+    res.cookie("access_token", token, { httpOnly: true, path: "/", sameSite: "none", secure: true });
     res.status(201).send({ user });
   } catch (error) {
     res.status(400).send(error);
@@ -19,7 +19,7 @@ router.post("/users/login", async (req, res) => {
   try {
     const user = await User.findByCredentials(req.body.email, req.body.password);
     const token = await user.generateAuthToken();
-    res.cookie("access_token", token, { httpOnly: true, path: "/" });
+    res.cookie("access_token", token, { httpOnly: true, path: "/", sameSite: "none", secure: true });
     res.send({
       user: user
     });
