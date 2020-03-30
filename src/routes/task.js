@@ -25,7 +25,7 @@ router.get("/tasks", auth, async (req, res) => {
     res
       .status(200)
       .send(response)
-      .sendFile(path.join(__dirname + "../client/build/index.html"));
+      .sendFile(path.join(__dirname + "../../client/build/index.html"));
   } catch (error) {
     res.status(500).send(error);
   }
