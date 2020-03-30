@@ -22,7 +22,10 @@ router.post("/tasks", auth, async (req, res) => {
 router.get("/tasks", auth, async (req, res) => {
   try {
     const response = await Task.find({ owner: req.user._id });
-    res.status(200).send(response);
+    res
+      .status(200)
+      .send(response)
+      .sendFile(path.join(__dirname + "../client/build/index.html"));
   } catch (error) {
     res.status(500).send(error);
   }
