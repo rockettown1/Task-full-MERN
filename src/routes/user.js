@@ -21,7 +21,7 @@ router.post("/users/login", async (req, res) => {
     const token = await user.generateAuthToken();
     res.cookie("access_token", token, { httpOnly: true, path: "/", sameSite: "none" });
     res.send({
-      user: user
+      user: user,
     });
   } catch (error) {
     res.status(400).send({ error: "Incorrect login details" });
@@ -30,7 +30,7 @@ router.post("/users/login", async (req, res) => {
 
 router.get("/users/logout", auth, async (req, res) => {
   try {
-    req.user.tokens = req.user.tokens.filter(token => {
+    req.user.tokens = req.user.tokens.filter((token) => {
       return token.token !== req.token;
     });
     await req.user.save();
@@ -60,10 +60,6 @@ router.patch("/users/:id", async (req, res) => {
 
 router.delete("/users/me", auth, async (req, res) => {
   try {
-    // const user = await User.findByIdAndDelete(req.user._id);
-    // if (!user) {
-    //   return res.status(404).send();
-    // }
     await req.user.remove();
     res.status(200).send(req.user);
   } catch (error) {
