@@ -12,3 +12,5 @@ All styling is 100% custom.
 ![Login](/login.gif)
 
 ![Add Task](/tutorial.gif)
+
+![Add Task](/mezzaQueries.gif)
