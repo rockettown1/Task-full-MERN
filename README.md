@@ -9,6 +9,6 @@ Node (middleware, models and server setup)
 
 All styling is 100% custom.
 
-![Login](/login720.gif)
+![Login](/login.gif)
 
-![Add Task](/tasktutorial720.gif)
+![Add Task](/tutorial.gif)
